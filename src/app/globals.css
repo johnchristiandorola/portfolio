@@ -1,8 +1,7 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
-  
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -50,15 +49,14 @@
   }
 }
 
-
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
-    a{
-      @apply hover:bg-primary-foreground hover:border duration-500 p-2 rounded-sm 
-    }
+@layer base {
+  * {
+    @apply border-border;
   }
+  body {
+    @apply bg-background text-foreground;
+  }
+  /* a {
+    @apply hover:bg-primary-foreground hover:border duration-500 p-2 rounded-sm;
+  } */
+}
