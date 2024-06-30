@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import motorent from '@/images/motorent.png';
 import marketplace from '@/images/marketplace.png';
+import portfolio from '@/images/portfolio.png';
+
 const Projects = () => {
   return (
     <div className="w-full flex flex-col items-center mx-auto py-20  text-center">
@@ -47,21 +49,18 @@ const Projects = () => {
                 </p>
               </div>
               <Image
-                src={motorent}
+                src={portfolio}
                 alt="motorent"
                 height={300}
                 className="border rounded-md"
               ></Image>
               <div className="flex justify-start items-center gap-5">
-                <Link
-                  href={'https://github.com/johnchristiandorola/portfolio'}
-                  target="_blank"
-                >
+                <Link href={'/'} target="_blank">
                   <Button variant={'default'}>View Live</Button>
                 </Link>
 
                 <Link
-                  href={'https://github.com/johnchristiandorola/Motor-Rental'}
+                  href={'https://github.com/johnchristiandorola/portfolio'}
                   target="_blank"
                 >
                   <Button variant={'secondary'}>Source Code</Button>
